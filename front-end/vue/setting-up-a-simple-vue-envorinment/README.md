@@ -74,7 +74,7 @@ First create a div element and give it an identifier attribute. You can name it 
 </html>
 ```
 
-The ‘el’ property defines what html element we’re going to inject our Vue. So we’ll chose the *app* element we just created a moment ago. The ‘data’ property is an object where you’ll store variables that our app (or [Vue instance](https://vuejs.org/v2/guide/instance.html)) can use. These variables/data are also reactive! So things can be manipulated on the fly. Side note: this is also the magic of Vue (and many of the front end frameworks like react and angular) If you're familiar with the idea of state, just think of this as a mini state for our app (or [Vue instance](https://vuejs.org/v2/guide/instance.html)). We’re going to create a variable (or data property) called message. It’s just a simple string. We’ll go with the more Californian version of Hello World and use Hey World.  
+The ‘el’ property defines what html element we’re going to inject our Vue. So we’ll chose the *app* element we just created a moment ago. The ‘data’ property is an object where you’ll store variables that our app (or [Vue instance](https://vuejs.org/v2/guide/instance.html)) can use. These variables/data are also reactive! So things can be manipulated on the fly. Side note: this is also the magic of Vue (and many of the front end frameworks like react and angular) If you're familiar with the idea of [state](https://en.wikipedia.org/wiki/State_(computer_science)), just think of this as a mini state for our app (or [Vue instance](https://vuejs.org/v2/guide/instance.html)). We’re going to create a variable (or data property) called *message*. It’s just a simple string. We’ll go with the more Californian version of Hello World and use Hey World.  
 
 ```
 <!DOCTYPE html>
