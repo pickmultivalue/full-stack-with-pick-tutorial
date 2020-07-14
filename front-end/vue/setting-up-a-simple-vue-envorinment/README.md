@@ -34,11 +34,11 @@ Next we’re going to head over to [vuejs.org](https://vuejs.org/) and directly 
 <head>
 <title>Page Title</title>
 
-<!-- development version, includes helpful console warnings 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<!-- production version, optimized for size and speed -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- production version, optimized for size and speed
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
 
 </head>
 <body>
@@ -59,11 +59,11 @@ First create a div element and give it an identifier attribute. You can name it 
 <head>
 <title>Page Title</title>
 
-<!-- development version, includes helpful console warnings 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<!-- production version, optimized for size and speed -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- production version, optimized for size and speed
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
 
 </head>
 <body>
@@ -82,11 +82,11 @@ The ‘el’ property defines what html element we’re going to inject our Vue.
 <head>
 <title>Page Title</title>
 
-<!-- development version, includes helpful console warnings 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<!-- production version, optimized for size and speed -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- production version, optimized for size and speed
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
 
 </head>
 <body>
@@ -119,11 +119,11 @@ Going back up to our html we’re going to display this data variable in the dom
 <head>
 <title>Page Title</title>
 
-<!-- development version, includes helpful console warnings 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<!-- production version, optimized for size and speed -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- production version, optimized for size and speed
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
 
 </head>
 <body>
