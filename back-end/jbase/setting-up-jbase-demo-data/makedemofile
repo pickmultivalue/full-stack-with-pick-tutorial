@@ -1,0 +1,269 @@
+*
+* Record generation program for JDP testing
+*
+    PROMPT ""
+*
+    CRT "How many records do you want : ":
+    INPUT RECOUNT
+*
+    CRT "What filename would you like : ":
+    INPUT FileName
+*
+    Created = 0
+*
+    OPEN FileName TO M THEN
+        CRT "File exists; CLEAR it ? (Y/N) : ":
+        INPUT ANS, 1
+        ANS = ANS "MCU"
+        IF ANS = "Y" THEN
+            CLEARFILE M
+        END
+    END ELSE
+        Mod = RECOUNT /14
+        IF Mod < 11 THEN Mod = 11
+        EXECUTE "CREATE-FILE ":FileName:" 1 ":Mod
+        Created = 1
+        OPEN FileName TO M ELSE
+            ABORT 201, FileName
+        END
+    END
+*
+    OPEN "DICT ":FileName TO DM ELSE
+        ABORT 201, "DICT ":FileName
+    END
+*
+    FIRSTNAME = "JOHN"
+    FIRSTNAME<-1> = "HARRY"
+    FIRSTNAME<-1> = "BILL"
+    FIRSTNAME<-1> = "STEVE"
+    FIRSTNAME<-1> = "ERIC"
+    FIRSTNAME<-1> = "GREG"
+    FIRSTNAME<-1> = "ALAN"
+    FIRSTNAME<-1> = "JASON"
+    FIRSTNAME<-1> = "CLIVE"
+    FIRSTNAME<-1> = "CHRIS"
+    FIRSTNAME<-1> = "MIKE"
+    FIRSTNAME<-1> = "MICK"
+    FIRSTNAME<-1> = "PATE"
+    FIRSTNAME<-1> = "BRUCE"
+    FIRSTNAME<-1> = "DOUG"
+    FIRSTNAME<-1> = "DAVID"
+    FIRSTNAME<-1> = "JAMES"
+    FIRSTNAME<-1> = "AMANDA"
+    FIRSTNAME<-1> = "MARTIN"
+    FIRSTNAME<-1> = "PHILIP"
+    FIRSTNAME<-1> = "TED"
+    FIRSTNAME<-1> = "TERRY"
+    FIRSTNAME<-1> = "RON"
+    FIRSTNAME<-1> = "HERVE"
+    FIRSTNAME<-1> = "RAPH"
+    FIRSTNAME<-1> = "FB"
+    FIRSTNAME<-1> = "DELLA"
+*
+    LASTNAME = "ATKINS"
+    LASTNAME <-1> = "GATES"
+    LASTNAME <-1> = "JOHNSON"
+    LASTNAME <-1> = "McNEALY"
+    LASTNAME <-1> = "COOPER"
+    LASTNAME <-1> = "MURPHY"
+    LASTNAME <-1> = "LAMBERT"
+    LASTNAME <-1> = "MURPHY"
+    LASTNAME <-1> = "AUBERT"
+    LASTNAME <-1> = "HARRIS"
+    LASTNAME <-1> = "WILLIS"
+    LASTNAME <-1> = "SMITH"
+    LASTNAME <-1> = "JONES"
+    LASTNAME <-1> = "FLETCHER"
+    LASTNAME <-1> = "POGSON"
+    LASTNAME <-1> = "WATERS"
+    LASTNAME <-1> = "JACKSON"
+    LASTNAME <-1> = "BLACK"
+    LASTNAME <-1> = "WALKER"
+    LASTNAME <-1> = "BAILEY"
+    LASTNAME <-1> = "GIBSON"
+    LASTNAME <-1> = "DEAN"
+    LASTNAME <-1> = "TRAVERS"
+    LASTNAME <-1> = "CLARKE"
+    LASTNAME <-1> = "GRABBIT"
+    LASTNAME <-1> = "LEGGIT"
+    LASTNAME <-1> = "SMOOCH"
+*
+    ADDR1 = "10260 SW GREENBURG RD"
+    ADDR1<-1> = "1 MICROSOFT WAY"
+    ADDR1<-1> = "1 SUN AVENUE"
+    ADDR1<-1> = "999 LETSBE AVENUE"
+    ADDR1<-1> = "42 MILLI WAYS"
+    ADDR1<-1> = "121 ELEVEN SQUARE "
+    ADDR1<-1> = "64 HADDOCKEN PLACE"
+*
+    ADDR2 = "#1020"
+    ADDR2<-1> = "SUITE 23"
+    ADDR2<-1> = "APT 42"
+    ADDR2<-1> = "LEVEL 42"
+    ADDR2<-1> = ""
+*
+    CITY = "LOS ANGLES"
+    CITY<-1> = "PORTLAND"
+    CITY<-1> = "RENO"
+    CITY<-1> = "SEATTLE"
+    CITY<-1> = "SAN JOSE"
+    CITY<-1> = "SYDNEY"
+    CITY<-1> = "NEW YORK"
+    CITY<-1> = "SPRINGFIELD"
+*
+    STATE = "OR"
+    STATE<-1> = "FL"
+    STATE<-1> = "NSW"
+    STATE<-1> = "CA"
+    STATE<-1> = "MD"
+    STATE<-1> = "NY"
+    STATE<-1> = "MI"
+    STATE<-1> = "WA"
+    STATE<-1> = "IN"
+    STATE<-1> = "IL"
+    STATE<-1> = "MA"
+*
+    ZIP = "97223"
+    ZIP <-1> = "12345"
+    ZIP <-1> = "72344"
+    ZIP <-1> = "09324"
+    ZIP <-1> = "24358"
+    ZIP <-1> = "09284"
+*
+    HOMETEL = "(503) 246-2317"
+    HOMETEL<-1> = "(555) 555-1237"
+    HOMETEL<-1> = "(524) 555-2437"
+    HOMETEL<-1> = "(125) 555-1337"
+    HOMETEL<-1> = "(124) 555-1337"
+*
+    WORKTEL = "(503) 246-2317"
+    WORKTEL<-1> = "(555) 555-1237"
+    WORKTEL<-1> = "(524) 555-2437"
+    WORKTEL<-1> = "(125) 555-1337"
+    WORKTEL<-1> = "(124) 555-1337"
+*
+    EMAIL = "@jbase.com"
+    EMAIL<-1> = "@compa.com"
+    EMAIL<-1> = "@compb.com"
+    EMAIL<-1> = "@compc.com"
+    EMAIL<-1> = "@compd.com"
+    EMAIL<-1> = "@compe.com"
+    EMAIL<-1> = "@spam.com"
+    EMAIL<-1> = "@nospam.com"
+    EMAIL<-1> = "@compz.com"
+    EMAIL<-1> = "@morespam.com"
+    EMAIL<-1> = "@alice.com"
+    EMAIL<-1> = "@mason.com"
+    EMAIL<-1> = "@lint.com"
+    EMAIL<-1> = "@hoho.com"
+*
+    HARDWARE = "HP"
+    HARDWARE<-1> = "ZSERIES"
+    HARDWARE<-1> = "PSERIES"
+    HARDWARE<-1> = "XSERIES"
+    HARDWARE<-1> = "ISERIES"
+    HARDWARE<-1> = "DIGITAL"
+    HARDWARE<-1> = "SOLARIS"
+    HARDWARE<-1> = "COMPAQ"
+    HARDWARE<-1> = "SPARC"
+*
+    OS = "NT"
+    OS <-1> = "AIX"
+    OS <-1> = "HPUX"
+    OS <-1> = "SOLARIS"
+    OS <-1> = "LINUX RH7"
+    OS <-1> = "LINUX RH8"
+    OS <-1> = "TRU64"
+    OS <-1> = "LINUX RH9"
+*
+    SYSTEMTYPE = "jBASE"
+    SYSTEMTYPE<-1> = "ROS"
+    SYSTEMTYPE<-1> = "UNI*"
+    SYSTEMTYPE<-1> = "RAINING"
+    SYSTEMTYPE<-1> = "IN2"
+* OK, NOW TO MAKE UP A BILLION RECORDS
+    CFIRSTNAME = DCOUNT(FIRSTNAME, @AM)
+    CLASTNAME = DCOUNT(LASTNAME ,@AM)
+    CADDR1 = DCOUNT(ADDR1 ,@AM)
+    CADDR2 = DCOUNT(ADDR2 ,@AM)
+    CCITY = DCOUNT(CITY ,@AM)
+    CSTATE = DCOUNT(STATE ,@AM)
+    CZIP = DCOUNT(ZIP ,@AM)
+    CHOMETEL = DCOUNT(HOMETEL ,@AM)
+    CWORKTEL = DCOUNT(WORKTEL ,@AM)
+    CEMAIL = DCOUNT(EMAIL ,@AM)
+    CHARDWARE = DCOUNT(HARDWARE ,@AM)
+    Cos = DCOUNT(OS ,@AM)
+    CSYSTEMTYPE = DCOUNT(SYSTEMTYPE ,@AM)
+*
+    FOR I = 1 TO RECOUNT
+        CRT "*":
+        REC = ""
+        REC<1> = FIRSTNAME<1+RND(CFIRSTNAME)>
+        REC<2> = LASTNAME<1+RND(CLASTNAME)>
+        REC<3> = ADDR1<1+RND(CADDR1)>
+        REC<4> = ADDR2<1+RND(CADDR2)>
+        REC<5> = CITY<1+RND(CCITY)>
+        REC<6> = STATE<1+RND(CSTATE)>
+        REC<7> = ZIP<1+RND(CZIP)>
+        REC<8> = HOMETEL<1+RND(CHOMETEL)>
+        REC<9> = WORKTEL<1+RND(CWORKTEL)>
+        REC<10> = REC<1>:REC<2>[1,1]:EMAIL<1+RND(CEMAIL)>
+        REC<11> = HARDWARE<1+RND(CHARDWARE)>
+        REC<12> = OS<1+RND(Cos)>
+        REC<13> = SYSTEMTYPE<1+RND(CSYSTEMTYPE)>
+        REC<14> = 50 + RND(2000)
+*
+        CC = RND(8)
+        FOR X = 1 TO CC
+            REC<11,-1> = HARDWARE<1+RND(CHARDWARE)>
+            REC<12,-1> = OS<1+RND(Cos)>
+            REC<13,-1> = SYSTEMTYPE<1+RND(CSYSTEMTYPE)>
+            REC<14,-1> = 50 + RND(2000)
+        NEXT
+        WRITE REC ON M, I "R%7"
+    NEXT I
+* Now we create the dictionary entries
+    DictList = ""
+*
+    DictList<-1> = 'FIRSTNAME':@VM:'A':@VM:'1':@VM:'FIRSTNAME':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'24'
+    DictList<-1> = 'LASTNAME':@VM:'A':@VM:'2':@VM:'Last Name':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'20'
+    DictList<-1> = 'ADDR1':@VM:'A':@VM:'3':@VM:'Address Line 1':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'6'
+    DictList<-1> = 'ADDR2':@VM:'A':@VM:'4':@VM:'Address Line 2':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'20'
+    DictList<-1> = 'CITY':@VM:'A':@VM:'5':@VM:'City':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'10'
+    DictList<-1> = 'STATE':@VM:'A':@VM:'6':@VM:'State':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'3'
+    DictList<-1> = 'ZIP':@VM:'A':@VM:'7':@VM:'Zip':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'12'
+    DictList<-1> = 'HOMETEL':@VM:'A':@VM:'8':@VM:'Home Tel':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'16'
+    DictList<-1> = 'WORKTEL':@VM:'A':@VM:'9':@VM:'Work Tel':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'16'
+    DictList<-1> = 'EMAIL':@VM:'A':@VM:'10':@VM:'Email':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'22'
+    DictList<-1> = 'HARDWARE':@VM:'A':@VM:'11':@VM:'Hardware':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'15'
+    DictList<-1> = 'OS':@VM:'A':@VM:'12':@VM:'OS':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'15'
+    DictList<-1> = 'NUMUSERS':@VM:'A':@VM:'14':@VM:'Num Users':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'6'
+    DictList<-1> = 'SYSTEMTYPE':@VM:'A':@VM:'13':@VM:'MVDBASE':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'':@VM:'L':@VM:'24'
+*
+    DEC = 1
+*
+    LOOP
+        DictEntry = DictList<DEC++>
+    WHILE DictEntry # "" DO
+        CONVERT @VM TO @AM IN DictEntry
+        ID = DictEntry<1>
+        DEL DictEntry<1>
+        WRITE DictEntry ON DM, ID
+    REPEAT
+*
+    CRT
+    IF NOT(Created) THEN
+        CRT
+        CRT "Would you like to resize the file for optimal efficiency ? (Y/N) : ":
+        INPUT ANS, 1
+        ANS = ANS "MCU"
+        IF ANS = "Y" THEN
+            DM = ""
+            M = ""
+            EXECUTE "jrf -V -D ":FileName
+        END
+    END
+*
+    CRT
+    CRT "Done it old chap."
