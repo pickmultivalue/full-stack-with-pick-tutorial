@@ -5,10 +5,9 @@ nohup jbase_agent --config= &
 ```
 You may have to hit enter for the command prompt to come back.  
   
-Fire up your favortie browser and navigate to: [http://localhost:20002/api/wresttest](http://localhost:20002/api/wresttest)
+Fire up your favortie browser and navigate to: [http://localhost:20002/api/wresttest](http://localhost:20002/api/wresttest) This will prove that jAgent is up and running if you see a page full of JSON. It will also setup the WDB.RESOURCE file when it’s accessed for the first time.  
   
-This will prove that jAgent is up and running if you see a page full of JSON. It will also setup the WDB.RESOURCE file when it’s accessed for the first time.  
-  
+### Output JSON with a program 
 The next step is to write a program that outputs JSON for the web. I have prepared a [minimal program available here](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint/GET-API-DEMO.b).
 
 1. `EDIT BP GET-API-DEMO` enter
@@ -18,7 +17,8 @@ The next step is to write a program that outputs JSON for the web. I have prepar
 1. `FI` enter
 1. `BASIC BP API-DEMO` enter
 1. `CATALOG BP API-DEMO` enter
-
+  
+### Connect jAgent to Program 
 Next, we need to wire up jAgent to our new program
 
 1. `EDIT WDB.RESOURCE API*DEMO` enter
