@@ -1,7 +1,7 @@
 # Setting up a GET endpoint
 We need to startup jAgent in the background and verify it's running.
 ```
-nohup jbase_agent --config= & 
+!nohup jbase_agent --config= & 
 ```
 You may have to hit enter for the command prompt to come back.  
   
