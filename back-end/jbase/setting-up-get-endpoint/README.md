@@ -3,35 +3,37 @@ We need to startup jAgent in the background and verify it's running.
 ```
 nohup jbase_agent --config= & 
 ```
-You may have to hit enter for the command prompt to come back.
-```
-Browse to:  http://localhost:20002/api/wresttest
-```
-
-This will prove that jAgent is up and running if you see a page full of JSON. It will also setup the WDB.RESOURCE file when it’s accessed for the first time.
-The next step is to write a program that outputs JSON for the web. I have a minimal program already prepared. It is available at https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint/GET-API-DEMO.b
-
-```
-EDIT BP GET-API-DEMO
-<Control-V>
-BASIC BP API-DEMO
-CATALOG BP API-DEMO
-```
-
-Next, we need to tell wire up jAgent to our new program
-```
-EDIT WDB.RESOURCE API*DEMO
-P
-API FOR GETTING A SINGLE RECORD FROM DEMO-FILE
-GET-API-DEMO
+You may have to hit enter for the command prompt to come back.  
   
-1
-1
-```
-To verify we that it is working:
-```
-Browse to: http://localhost:20002/api/demo/001
-```
+Fire up your favortie browser and navigate to: [http://localhost:20002/api/wresttest](http://localhost:20002/api/wresttest)
+  
+This will prove that jAgent is up and running if you see a page full of JSON. It will also setup the WDB.RESOURCE file when it’s accessed for the first time.  
+  
+The next step is to write a program that outputs JSON for the web. I have prepared a [minimal program available here](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint/GET-API-DEMO.b).
+
+1. `EDIT BP GET-API-DEMO` enter
+1. `I` enter 
+1. Paste in the [prepared program](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint/GET-API-DEMO.b)
+1. enter
+1. `FI` enter
+1. `BASIC BP API-DEMO` enter
+1. `CATALOG BP API-DEMO` enter
+
+Next, we need to wire up jAgent to our new program
+
+1. `EDIT WDB.RESOURCE API*DEMO` enter
+1. `I` enter 
+1. `P` enter
+1. `API FOR GETTING A SINGLE RECORD FROM DEMO-FILE` enter
+1. `GET-API-DEMO` enter
+1. ` ` (space) enter
+1. `1` enter
+1. `1` enter
+1. enter
+1. `FI` enter
+  
+To verify we that it is working, go back to your browser and navigate to: [http://localhost:20002/api/demo/001](http://localhost:20002/api/demo/001)  
+  
 This will get us the data in JSON format that is accessible on the web.
 
 # Postman
