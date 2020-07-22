@@ -3,8 +3,13 @@ In this tutorial we’re going to show you how to set up a simple API connection
   
 **Prerequisites**: minimal HTML, JavaScript and minmal Vue  
   
-* [Web Editor](#Web Editor) 
-*
+* [Web Editor](#web-editor) 
+* [Include Axios](#include-axios) 
+* [Test End Point](#test-end-point)
+* [Retrieve Database Record via API](#retrieve-database-record-via-api)
+* [Display Record Data](#display-record-data)
+* [In Closing](#in-closing)
+
   
 Be sure you have the [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) from our *[Setting Up a Simple Vue Environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)*
 
