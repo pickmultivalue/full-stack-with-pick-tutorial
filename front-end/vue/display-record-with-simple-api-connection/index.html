@@ -16,34 +16,45 @@
 <body>
     
     <div id="app">
-        <p>{{ record }}</p>
+        <div v-if="error">
+            <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
+        </div>
+
+        <div v-else>
+            <div v-if="loading">Loading...</div>
+        
+            <div v-else>
+                Hey {{ record.firstName }} {{ record.lastName }}!
+            </div>
+        
+        </div>
     </div>
 
     <script>
 
         var app = new Vue({
             el: '#app',
-            data: {
-                record: '',
-                loading: true,
-                errored: false
+            data() {
+                return {
+                    record: '',
+                    loading: true,
+                    error: false
+                }
             },
             mounted() {
-                axios
-                    .get('http://localhost:20002/api/DEMO/001')
+                axios.get('http://localhost:20002/api/DEMO/001')
                     .then(response => {
-                        //this.info = response
-                        console.log(response)
+                        this.record = response.data.data[0]
                     })
                     .catch(error => {
                         console.log(error)
-                        this.errored = true
+                        this.error = true
                     })
-                    .finally(() => this.loading = false)
+                    .finally(() => {
+                        this.loading = false
+                    })
             }
         })
-
-        //console.log(app)
 
     </script>
 
