@@ -11,7 +11,7 @@ In this tutorial we’re going to show you how to set up a simple API connection
 * [In Closing](#in-closing)
 
   
-Be sure you have the [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) from our *[Setting Up a Simple Vue Environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)*, as that's what we'll be working from.
+Be sure you have the [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) from our *[Setting Up a Simple Vue Environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)* tutorail, as it's our starting point.
 
 ## Web Editor
 Open up our [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) document in your favorite web editor. Need one? Try [VS Code](https://code.visualstudio.com/download).
@@ -59,7 +59,7 @@ Navigate to [Axios on npmjs.org](https://www.npmjs.com/package/axios). Copy the 
 Now we have the Axios library installed and ready to use!
   
 ## Test End Point
-Open up [postman](https://www.postman.com/) and create a new request. As discussed in our *[Setting Up Get Endpoint](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)* tutorial we have an end point `http://localhost:20002/api/DEMO/001`. You can replace *001* with any number up to *100*. The number tells the API to retrieve a database record with that id. Add the url as a new GET request and you'll see record data pulled in as JSON. 
+Open up [postman](https://www.postman.com/) and create a new request. As discussed in our *[Setting Up Get Endpoint](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)* tutorial we have an end point `http://localhost:20002/api/DEMO/001`. The number *001* in the url is our database record identifier; it will tell the API which record to *get*. The demo database has 100 sample records so that identifier can range from *001* to *100*. Add the url as a new GET request and you'll see record data pulled in as JSON. 
 
 ## Retrieve Database Record via API
 First we're going to create three new data properties:  
@@ -108,7 +108,7 @@ We're also going to convert our data property into a function and have it return
 </html>
 ```
   
-Next We're going to utilize another method in the Vue instance called [mounted](https://vuejs.org/v2/api/#mounted). Check it out in the Vue instance [life cycle](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram).
+Next We're going to utilize another method in the Vue instance called [mounted](https://vuejs.org/v2/api/#mounted). Mounted is a function called during the Vue instance life cycle after the component has been mounted. Check out the [Vue instance life cycle here](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram). 
 
 ```
 <script>
