@@ -1,6 +1,6 @@
 *=========================================================================
 * PROGRAM:    GET-API-DEMO
-* PURPOSE:    PROCESS GET A SINGLE RECORD FROM DEMO-FILE VIA REST
+* PURPOSE:    PROCESS GET A SINGLE RECORD FROM DEMO.FILE VIA REST
 *=========================================================================
     * Set the type of data to be returned
     CALL WSETCONTENTTYPE("application/json")
@@ -37,7 +37,7 @@
             GOSUB get.one.record
             IF NO.RECORD=1 THEN
                 JSON.STATUS="error"
-                JSON.STATUS.MESSAGE="No DEMO-FILE records found for ":ID:"."
+                JSON.STATUS.MESSAGE="No DEMO.FILE records found for ":ID:"."
             END
         CASE 1
             * Invalid action
