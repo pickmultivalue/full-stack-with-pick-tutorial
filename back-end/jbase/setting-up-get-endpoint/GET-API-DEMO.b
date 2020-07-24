@@ -16,9 +16,9 @@
     JSON.STATUS="ok"
     JSON.STATUS.MESSAGE=""
     *
-    OPEN 'DEMO-FILE' TO DEMO.FILE ELSE
+    OPEN 'DEMO.FILE' TO DEMO.FILE ELSE
         JSON.STATUS        = "error"
-        JSON.STATUS.MESSAGE= "Could not open DEMO-FILE file"
+        JSON.STATUS.MESSAGE= "Could not open DEMO.FILE file"
         GOTO end.of.call
     END
     *
