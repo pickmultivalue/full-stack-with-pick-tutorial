@@ -221,7 +221,7 @@
             REC<13,-1> = SYSTEMTYPE<1+RND(CSYSTEMTYPE)>
             REC<14,-1> = 50 + RND(2000)
         NEXT
-        WRITE REC ON M, I "R%7"
+        WRITE REC ON M, I "R%3"
     NEXT I
 * Now we create the dictionary entries
     DictList = ""
