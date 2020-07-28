@@ -1,5 +1,12 @@
-# Getting Jbase docker running and create demo data
+# Getting jBASE Docker running and create demo data
 In this tutorial we're will use show you how to install the docker application, download the latest Jbase Container and get it up and running on your system. Lastly we will create a demo account and demo table and populate with data.
+
+1. [Sign Up for a free Docker account](#signup-for-free-docker-account)
+1. [Download and Install Docker](#download-docker-application)
+1. [Download jbase container](#download-the-jbase-container-and-get-it-running)
+1. [Create account DEMO and file containing basic program](#creat-demo-account-in-jbase-and-create-file-to-contain-the-basic-program)
+1. [Install make demo program](#get-basic-program-source-that-will-create-and-populate-the-demo-file)
+1. [Run make demo program](#upload-program-source-code-and-run-program-to-create-demo-file)
 
 ## Signup for free Docker account
 You will need to do is go to Docker.com and register for a free account.  To register you click on the get started button at the top right. Scroll down to choose a plan. Then click on the Signup for Free. After you register you will get an email that you will use to verify your account.
