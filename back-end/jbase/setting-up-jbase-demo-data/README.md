@@ -6,7 +6,8 @@ In this tutorial we're will use show you how to install the docker application, 
 1. [Download jbase container](#download-the-jbase-container-and-get-it-running)
 1. [Create account DEMO and file containing basic program](#creat-demo-account-in-jbase-and-create-file-to-contain-the-basic-program)
 1. [Install make demo program](#get-basic-program-source-that-will-create-and-populate-the-demo-file)
-1. [Run make demo program](#upload-program-source-code-and-run-program-to-create-demo-file)
+1. [Upload program source to jBASE](#upload-program-source-code)
+1. [Run make demo program and create demo file](#run-program-to-create-demo-file)
 
 ## Signup for free Docker account
 You will need to do is go to [Docker.com](https://www.docker.com) and register for a free account.  To register you click on the [get started button](https://www.docker.com/get-started) at the top right. Scroll down to [choose a plan](https://www.docker.com/pricing). Then click on the Signup for Free. After you register you will get an email that you will use to verify your account.
@@ -36,7 +37,7 @@ We will now create a basic program file to hold the program that will create the
 ## Get basic program source that will create and populate the demo file
  You are already at the correct page in github that contains the source code.  The *make demo program* source code can be found by following [full-stack-with-pick-tutorial](https://github.com/pickmultivalue/full-stack-with-pick-tutorial) -> [back-end/Jbase](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase) -> [setting-up-Jbase-demo-data](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-jbase-demo-data) -> [makedemofile](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/back-end/jbase/setting-up-jbase-demo-data/makedemofile). This will bring up the make demo program source code. You will need to higlight the code and copy as we will simply paste the code into the program in jBASE.
   
-## Upload program source code and run program to create demo file
+## Upload program source code
 Now we need to upload that source code program to jBASE. 
   
 1. Now go back to Jbase (command prompt window).
@@ -44,7 +45,9 @@ Now we need to upload that source code program to jBASE.
 1. Simply paste the program from the prior step in. 
 1. In jBase to create an executable program you need to compile and catalog the program. We will File the program, compile and catalog in one step by hitting the escape key and typing `FIBC`. 
   
+## Run program to create demo file  
 Now we are ready to create the demo file by running the program!
+  
 1. Type the command `RUN BP MAKE.DEMO`. 
 1. The program will ask two questions: 
    1. First the number of records you want to create. We'll create 100. 
