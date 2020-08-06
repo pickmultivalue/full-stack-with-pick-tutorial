@@ -1,4 +1,6 @@
-# Setting up a GET endpoint
+[![Setting up a GET endpoint](video-thumb.jpg)](https://youtu.be/aKCau-EJA7c)
+
+# How to Set Up REST API Get End Points
 We need to startup jAgent in the background and verify it's running.
 ```
 !nohup jbase_agent --config= & 
