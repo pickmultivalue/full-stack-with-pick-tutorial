@@ -1,6 +1,6 @@
 [![Getting jBASE Docker running and create demo data](video-thumb.jpg)](https://youtu.be/gkHoVHq4J2c)
   
-# Getting jBASE Docker running and create demo data
+# How to Set Up Demo Data in jBASE
 In this tutorial we're will use show you how to install the docker application, download the latest jBASE Container and get it up and running on your system. Lastly we will create a demo account and demo table and populate with data.
 
 1. [Sign Up for a free Docker account](#signup-for-free-docker-account)
