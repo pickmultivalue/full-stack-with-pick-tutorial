@@ -1,4 +1,6 @@
-# Setting Up a Simple Vue Environment
+[![How to Set Up a Simple Vue Environment](video-thumb.jpg)](https://youtu.be/iz3piDKEw9Y)
+  
+# How to Set Up a Simple Vue Environment
 In this tutorial we’re going to show you how to set up a simple Vue environment. Vue is a JavaScript front end framework that will allow us to easily interact with the DOM (or html document) After we set up the environment, we’ll run through a simple hello world app example.  
   
 **Prerequisites**: minimal HTML and javascript  
