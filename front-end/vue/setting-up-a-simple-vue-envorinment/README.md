@@ -3,6 +3,11 @@ In this tutorial we’re going to show you how to set up a simple Vue environmen
   
 **Prerequisites**: minimal HTML and javascript  
   
+1. [Web Editor](#web-editor)
+1. [Create HTML Document](#create-html-document)
+1. [Include Vue with script tags via cdn](#include-vue-with-script-tags-via-cdn)
+1. [Set up a simple app by running through the “hello world” example](#set-up-a-simple-app-by-running-through-the-hello-world-example)
+  
 ## Web Editor
 Open up your favorite web editor. We use [VS Code](https://code.visualstudio.com/download) for editing, as it has some very handy extensions for modern web development and legacy extensions for Pick as well.  
   

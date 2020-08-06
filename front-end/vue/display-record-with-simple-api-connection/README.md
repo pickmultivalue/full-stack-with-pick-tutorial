@@ -1,5 +1,5 @@
 # Display a Database Record via a Simple API Connection
-In this tutorial we’re going to show you how to set up a simple API connection using Vue. In our previous tutorial, *[Setting Up Get Endpoint](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)*, we set up the end point. This API connection will allow us to retrieve a database record.    
+In this tutorial we’re going to show you how to set up a simple API connection using Vue. In our previous tutorial, *[How to set up a simple Vue environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)*, we set up the end point. This API connection will allow us to retrieve a database record.    
   
 **Prerequisites**: minimal HTML, JavaScript and minmal Vue  
   
