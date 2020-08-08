@@ -9,6 +9,8 @@ These lessons are designed to appeal to developers of *all* types. Whether you h
 > 2. REST APIs are a universal framework for allowing systems to talk with one another
 > 3. Vue.js is a popular modern application framework that marries the best of Angular with the best of React
 
+> Note on D3, OpenQM, Universe and Unidata: if you would prefer to follow this series on one of these flavors, you can obtain a copy of `MAKE.DEMO.FILE` from [here](https://github.com/pickmultivalue/make-demo-file).
+
 ## Repository Information
 
 The code for this repository is broken down into two parts: [back-end](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/) and [front-end](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/). This will allow you to gain a full-stack view of the solution while maintaining an appropriate separation of responsibilities.
