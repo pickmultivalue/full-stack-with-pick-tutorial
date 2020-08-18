@@ -17,10 +17,10 @@ The code for this repository is broken down into two parts: [back-end](https://g
 
 ## Tutorials
 
-1. [How to set up demo data in jBASE](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-jbase-demo-data)
-2. [How to set up REST API get end points](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)
-3. [How to set up a simple Vue environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)
-4. [How to display a database record with Vue](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/display-record-with-simple-api-connection)
+1. [How to set up demo data in jBASE](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-jbase-demo-data) | [YouTube](https://youtu.be/gkHoVHq4J2c)
+2. [How to set up REST API get end points](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint) | [YouTube](https://youtu.be/aKCau-EJA7c)
+3. [How to set up a simple Vue environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment) | [YouTube](https://youtu.be/iz3piDKEw9Y)
+4. [How to display a database record with Vue](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/display-record-with-simple-api-connection) | [YouTube](https://youtu.be/IKwcgHgo5Q8)
   
 ## License
 [MIT](https://opensource.org/licenses/MIT)  
