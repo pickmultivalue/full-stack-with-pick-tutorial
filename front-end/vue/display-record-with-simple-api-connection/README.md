@@ -1,29 +1,32 @@
+# How to Set Up Demo Data in jBASE
+
 [![How to Display a Database Record with Vue](video-thumb.jpg)](https://youtu.be/IKwcgHgo5Q8)
-  
-# How to Display a Database Record with Vue
-In this tutorial we’re going to show you how to set up a simple API connection using Vue. In our previous tutorial, *[How to set up a simple Vue environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)*, we set up the end point. This API connection will allow us to retrieve a database record.    
+
+In this tutorial we’re going to show you how to set up a simple API connection using Vue. In our previous tutorial, *[How to set up a simple Vue environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)*, we set up the end point. This API connection will allow us to retrieve a database record.
   
 **Prerequisites**: minimal HTML, JavaScript and minmal Vue  
   
-* [Web Editor](#web-editor) 
-* [Include Axios](#include-axios) 
-* [Test End Point](#test-end-point)
-* [Retrieve Database Record via API](#retrieve-database-record-via-api)
-* [Display Record Data](#display-record-data)
-* [In Closing](#in-closing)
+- [How to Set Up Demo Data in jBASE](#how-to-set-up-demo-data-in-jbase)
+  - [Web Editor](#web-editor)
+  - [Include Axios](#include-axios)
+  - [Test End Point](#test-end-point)
+  - [Retrieve Database Record via API](#retrieve-database-record-via-api)
+  - [Display Record Data](#display-record-data)
+  - [In Closing](#in-closing)
 
-  
-Be sure you have the [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) from our *[Setting Up a Simple Vue Environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)* tutorail, as it's our starting point.
+Be sure you have the [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) from our *[Setting Up a Simple Vue Environment](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/front-end/vue/setting-up-a-simple-vue-envorinment)* tutorial, as it's our starting point. Also, make sure you have jAgent running in the command prompt window by using the command  `jbase_agent`.
 
 ## Web Editor
+
 Open up our [index.html](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/blob/master/front-end/vue/setting-up-a-simple-vue-envorinment/index.html) document in your favorite web editor. Need one? Try [VS Code](https://code.visualstudio.com/download).
   
 ## Include Axios
+
 First we're going to add a JavaScript library (or package) called Axios. This library will easily allow us to make API calls. You could also use alternates like [fecth](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). But for this tutorial we'll use Axios, as it's commonly used for Vue projects.
 
 Navigate to [Axios on npmjs.org](https://www.npmjs.com/package/axios). Copy the cdn url and add it to the header of our document.
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,17 +64,20 @@ Navigate to [Axios on npmjs.org](https://www.npmjs.com/package/axios). Copy the 
 Now we have the Axios library installed and ready to use!
   
 ## Test End Point
-Open up [postman](https://www.postman.com/) and create a new request. As discussed in our *[Setting Up Get Endpoint](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)* tutorial we have an end point `http://localhost:20002/api/DEMO/001`. The number *001* in the url is our database record identifier; it will tell the API which record to *get*. The demo database has 100 sample records so that identifier can range from *001* to *100*. Add the url as a new GET request and you'll see record data pulled in as JSON. 
+
+Open up [postman](https://www.postman.com/) and create a new request. As discussed in our *[Setting Up Get Endpoint](https://github.com/pickmultivalue/full-stack-with-pick-tutorial/tree/master/back-end/jbase/setting-up-get-endpoint)* tutorial we have an end point `http://localhost:20002/api/DEMO/001`. The number *001* in the url is our database record identifier; it will tell the API which record to *get*. The demo database has 100 sample records so that identifier can range from *001* to *100*. Add the url as a new GET request and you'll see record data pulled in as JSON.
 
 ## Retrieve Database Record via API
+
 First we're going to create three new data properties:  
-* `record` - will store our record data
-* `loading` - will tell us if our content is loading
-* `error` - will store an error if there is one
+
+- `record` - will store our record data
+- `loading` - will tell us if our content is loading
+- `error` - will store an error if there is one
   
 We're also going to convert our data property into a function and have it return our data object. This will future proof our app by distinguishing this components data (or state) from every other component in the app. [Read more here](https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function).
   
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,9 +116,9 @@ We're also going to convert our data property into a function and have it return
 </html>
 ```
   
-Next We're going to utilize another method in the Vue instance called [mounted](https://vuejs.org/v2/api/#mounted). Mounted is a function called during the Vue instance life cycle after the component has been mounted. Check out the [Vue instance life cycle here](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram). 
+Next We're going to utilize another method in the Vue instance called [mounted](https://vuejs.org/v2/api/#mounted). Mounted is a function called during the Vue instance life cycle after the component has been mounted. Check out the [Vue instance life cycle here](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram).
 
-```
+```html
 <script>
     var app = new Vue({
         el: '#app',
@@ -132,7 +138,7 @@ Next We're going to utilize another method in the Vue instance called [mounted](
   
 Within [mounted](https://vuejs.org/v2/api/#mounted) is where we'll utilize Axios to make our API call. First we'll use the Axios [get request method alias](https://www.npmjs.com/package/axios#axiosgeturl-config) get our API data. This method accepts a url parameter
 
-```
+```html
 <script>
     var app = new Vue({
         el: '#app',
@@ -152,7 +158,7 @@ Within [mounted](https://vuejs.org/v2/api/#mounted) is where we'll utilize Axios
   
 To work with the recently aquired data we'll utilize other Axios methods using a neat feature of JavaScript called [method chaining](https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/). It's common practice to separate chained methods by line breaks, as it's way easier to read. The methods we'll be using are `then`, `catch`, and `finally`. The naming convention makes these methods uses pretty obvious.
 
-```
+```html
 <script>
     var app = new Vue({
         el: '#app',
@@ -172,9 +178,10 @@ To work with the recently aquired data we'll utilize other Axios methods using a
     });
 </script>
 ```
+
 The `then` method will return our API response via an anonymous callback function. `catch` and `finally` work in a similar manner. To see it more clearly I'll write it out in older javascript and convert in the next step.
 
-```
+```html
 <script>
     var app = new Vue({
         el: '#app',
@@ -209,7 +216,7 @@ The `then` method will return our API response via an anonymous callback functio
 
 Next we're going to make those methods do something useful! In the `then` method we'll change our component's data property `record` to be the recently aquired response. In the `catch` method we'll console.log the error and set our `error` data property to true. After everything `finally` loaded we'll set the `loading` property to false.
 
-```
+```html
 <script>
     var app = new Vue({
         el: '#app',
@@ -240,13 +247,14 @@ Next we're going to make those methods do something useful! In the `then` method
 Go ahead and console.log the reponse to see what we get back. Woah! You'll notice there's an object with all sorts of details API request information. We're only interested in the `data` property, which is an object containing our data array.
 
 ## Display Record Data
+
 Finally we're going to display the record's data!
   
 We're going to utilize Vue's handy if else directive to display the data appropriately. Vue's directives are really just html tag attributes that interact with Vue. So our `v-if` directive allows us to show something conditionally. We'll check if to make sure there's no error. If there's not an error we'll utilize `v-else` to display our record content.
   
 First we'll check if all the conent has loaded using a nested if directive. If it has then we'll say hello  
 
-```    
+```html
     <div id="app">
         <div v-if="error">
             <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
@@ -265,4 +273,5 @@ First we'll check if all the conent has loaded using a nested if directive. If i
 ```
 
 ## In Closing
+
 You now have a simple API call set up. Check out the next video in our series to interact with the API in different ways
