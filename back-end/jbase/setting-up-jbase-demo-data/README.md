@@ -26,7 +26,7 @@ Now to download and install the docker application again go to [Docker.com](http
 Once you have the docker application installed you will need to download the jBASE container. You do this by:
   
 1. Open a command prompt window.
-2. Type in `docker pull zumasys/jbase` and hit <kbd>enter</kbd>.  
+2. Type in `docker pull zumasys/jbase_base` and hit <kbd>enter</kbd>.  
   This will download the latest jBASE Docker container with jBASE already set up.
 3. Start the docker by typing in the following command from your command window `docker run -it -p 20002:20002 zumasys/jbase` and hit <kbd>enter</kbd>.
   
