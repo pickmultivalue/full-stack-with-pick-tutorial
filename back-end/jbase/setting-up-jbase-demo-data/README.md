@@ -29,7 +29,6 @@ Once you have the docker application installed you will need to download the jBA
 2. Type in `docker pull zumasys/jbase_base` and hit <kbd>enter</kbd>.  
   This will download the latest jBASE Docker container with jBASE already set up.
 3. Start the docker by typing in the following command from your command window `docker run -it -p 20002:20002 zumasys/jbase` and hit <kbd>enter</kbd>.
-  
 Now you have jBASE up and running from Docker!
   
 ## Creat DEMO account in jBASE and create file to contain the basic program
@@ -65,3 +64,5 @@ Now we are ready to create the demo file by running the program!
    2. Second the file name. Please use *DEMO.FILE* for the filename as that is what will be used in future videos.  
 
 The program randomly generates the data for the a static list of each data element. Lastly we list the file to see that the file was created and populated the command is `LIST DEMO.FILE FIRSTNAME LASTNAME ADDR1`.
+
+Note: If you exit the jShell type in `jsh` and hit <kbd>enter</kbd> to invoke the jShell - the jBase shell.
