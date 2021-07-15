@@ -64,4 +64,4 @@ Now we are ready to create the demo file by running the program!
    1. First the number of records you want to create. We'll create 100.
    2. Second the file name. Please use *DEMO.FILE* for the filename as that is what will be used in future videos.  
 
-The program randomly generates the data for the a static list of each data element. Lastly we list the file to see that the file was created and populated the command is `LIST DEMO.FILE FIRSTNAME LASTNAME ADDR1`
+The program randomly generates the data for the a static list of each data element. Lastly we list the file to see that the file was created and populated the command is `LIST DEMO.FILE FIRSTNAME LASTNAME ADDR1`.
